@@ -26,6 +26,11 @@ add_library(${PROJECT_NAME} SHARED
     tjsHashSearch.h
 )
 
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ../../core/common/tjs2
+)
+
 target_link_libraries(${PROJECT_NAME} PUBLIC
     tp_stub
 )
+
